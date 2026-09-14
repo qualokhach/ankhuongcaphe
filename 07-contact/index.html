@@ -1,3 +1,253 @@
 <!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liên hệ | An Khương</title>
+<meta name="description" content="Liên hệ An Khương về cà phê, sản phẩm, hợp tác và đơn hàng.">
+<link rel="canonical" href="https://ankhuongcoffee.com/07-contact/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="../assets/site.css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXSM22JW78"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-GXSM22JW78");</script>
+<style>
+/* Contact page only: visual layer; shared navigation/site structure remains unchanged. */
+.site-header.hide{transform:translateY(0)!important}
+.contact-page{background:#f2eadc;color:#302721}
+.contact-hero{position:relative;min-height:650px;display:flex;align-items:flex-end;overflow:hidden;background:#211712;color:#fff8ef}
+.contact-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,16,12,.92) 0%,rgba(25,16,12,.70) 38%,rgba(25,16,12,.16) 75%,rgba(25,16,12,.28) 100%);z-index:1}
+.contact-hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.contact-hero-content{position:relative;z-index:2;width:min(1240px,100%);margin:0 auto;padding:170px 30px 82px}
+.contact-eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#d7b487;margin-bottom:15px}
+.contact-hero h1{font-size:clamp(46px,5.2vw,72px);line-height:1.01;letter-spacing:-.045em;max-width:790px;margin:0 0 24px}
+.contact-hero p{max-width:700px;margin:0;color:#eaded3;font-size:19px;line-height:1.65}
+.contact-hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border:1px solid rgba(255,255,255,.45);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:.2s}
+.contact-button.primary{background:#c9a47a;border-color:#c9a47a;color:#211712}
+.contact-button:hover{background:#fff;color:#211712;border-color:#fff}
+.contact-section{padding:92px 30px}
+.contact-inner{max-width:1240px;margin:0 auto}
+.contact-section-head{max-width:850px;margin:0 auto 42px;text-align:center}
+.contact-kicker{font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#806246;margin-bottom:12px}
+.contact-section-head h2{font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.045em;margin:0 0 17px}
+.contact-section-head p{max-width:720px;margin:0 auto;color:#75675c;font-size:17px}
+.contact-split{display:grid;grid-template-columns:1.02fr .98fr;gap:24px;align-items:stretch}
+.contact-panel{background:#fffdf9;border:1px solid rgba(48,39,33,.14);min-height:100%;overflow:hidden}
+.contact-panel-image{height:100%;min-height:430px;overflow:hidden;background:#e4d8c8}
+.contact-panel-image img{width:100%;height:100%;object-fit:cover}
+.contact-panel-body{padding:34px}
+.contact-panel .tag{margin-bottom:11px}
+.contact-panel h3{font-size:32px;line-height:1.05;letter-spacing:-.025em;margin:0 0 18px}
+.contact-details{display:grid;gap:13px;margin-top:24px}
+.contact-detail{display:grid;grid-template-columns:88px 1fr;gap:14px;padding-top:13px;border-top:1px solid rgba(48,39,33,.12)}
+.contact-detail strong{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#806246}
+.contact-detail span,.contact-detail a{font-size:16px;color:#302721;line-height:1.5}
+.contact-detail a:hover{color:#9a744f}
+.purchase-section{background:#2b1e18;color:#fff8ef;padding:92px 30px}
+.purchase-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;min-height:470px}
+.purchase-image{overflow:hidden;position:relative}
+.purchase-image img{width:100%;height:100%;object-fit:cover}
+.purchase-copy{background:#3b2920;padding:58px 52px;display:flex;flex-direction:column;justify-content:center}
+.purchase-copy .contact-kicker{color:#c9a47a}
+.purchase-copy h2{font-size:clamp(40px,4.5vw,64px);line-height:.98;letter-spacing:-.045em;margin:0 0 18px}
+.purchase-copy p{color:#ddcfc3;max-width:520px;font-size:17px}
+.shop-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.shop-button{display:flex;align-items:center;justify-content:center;min-height:58px;background:#f7efe4;color:#211712;border:1px solid #f7efe4;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:.2s}
+.shop-button:hover{background:#c9a47a;border-color:#c9a47a}
+.brand-section{background:#e4d8c8}
+.brand-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:center}
+.brand-image{min-height:470px;overflow:hidden;background:#c9a47a}
+.brand-image img{width:100%;height:100%;min-height:470px;object-fit:cover}
+.brand-copy{padding:25px 25px 25px 28px}
+.brand-copy h2{font-size:clamp(42px,5vw,68px);line-height:.97;letter-spacing:-.05em;margin:0 0 20px}
+.brand-copy p{color:#5f5147;font-size:17px;max-width:620px}
+.brand-values{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}
+.brand-value{padding:18px 15px;border:1px solid rgba(48,39,33,.17);background:rgba(255,253,249,.46)}
+.brand-value strong{display:block;font-size:13px;line-height:1.2;margin-bottom:6px}
+.brand-value span{font-size:12px;color:#75675c}
+.explore-section{background:#f7efe4;padding-bottom:98px}
+.explore-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.explore-card{background:#fffdf9;border:1px solid rgba(48,39,33,.13);overflow:hidden;display:flex;flex-direction:column}
+.explore-card-media{aspect-ratio:16/9;overflow:hidden;background:#e4d8c8}
+.explore-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.explore-card:hover .explore-card-media img{transform:scale(1.035)}
+.explore-card-body{padding:23px 22px 25px;display:flex;flex-direction:column;flex:1}
+.explore-card-body h3{font-size:25px;line-height:1.05;margin:0 0 9px;letter-spacing:-.02em}
+.explore-card-body p{font-size:14px;color:#75675c;line-height:1.55;margin:0 0 18px}
+.explore-link{margin-top:auto;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#755538}
+.explore-link:hover{color:#b18455}
+.home-cta{position:relative;min-height:440px;overflow:hidden;color:#fff8ef;display:flex;align-items:center;background:#211712}
+.home-cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.home-cta::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,16,12,.88),rgba(25,16,12,.48),rgba(25,16,12,.35));z-index:1}
+.home-cta-inner{position:relative;z-index:2;width:min(1240px,100%);margin:0 auto;padding:75px 30px}
+.home-cta h2{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.05em;max-width:850px;margin:0 0 18px}
+.home-cta p{max-width:650px;color:#e2d5c9;font-size:17px;margin:0 0 27px}
+.home-link{display:inline-flex;padding:14px 22px;background:#c9a47a;color:#211712;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.home-link:hover{background:#fff}
+@media(max-width:900px){
+ .contact-hero{min-height:600px}.contact-hero-content{padding:150px 22px 65px}.contact-section,.purchase-section{padding:70px 20px}.contact-split,.purchase-grid,.brand-grid{grid-template-columns:1fr}.contact-panel-image{min-height:330px}.purchase-grid{min-height:0}.purchase-image{min-height:340px}.purchase-copy{padding:42px 28px}.brand-image,.brand-image img{min-height:350px}.brand-copy{padding:35px 5px}.explore-grid{grid-template-columns:repeat(2,1fr);padding:0 20px}.home-cta-inner{padding:65px 22px}
+}
+@media(max-width:560px){
+ .contact-hero{min-height:520px}.contact-hero h1{font-size:42px;line-height:1.03}.contact-hero p{font-size:17px}.contact-section{padding:60px 16px}.contact-panel-body{padding:25px 22px}.contact-detail{grid-template-columns:76px 1fr}.shop-buttons,.brand-values,.explore-grid{grid-template-columns:1fr}.explore-grid{padding:0 16px}.purchase-copy{padding:38px 22px}.brand-image,.brand-image img{min-height:300px}.home-cta{min-height:400px}.home-cta-inner{padding:58px 20px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua nội dung</a>
+<header class="site-header" id="siteHeader">
+  <nav class="nav">
+    <a class="brand" href="../index.html" aria-label="An Khương"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png" alt="An Khương"></a>
+    <div class="menu" data-nav-menu></div>
+    <div class="lang lang-global"><button class="active" data-lang="vi">VI</button><button data-lang="en">EN</button></div>
+    <button class="mobile-toggle" aria-label="Mở menu">☰</button>
+  </nav>
+</header>
 
-<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Liên hệ | An Khương</title><meta content="Liên hệ An Khương về cà phê, sản phẩm, hợp tác và đơn hàng." name="description"/><link href="https://ankhuongcoffee.com/07-contact/index.html" rel="canonical"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="../assets/site.css" rel="stylesheet"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GXSM22JW78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-GXSM22JW78");</script></head><body><a class="skip" href="#main">Bỏ qua nội dung</a><header class="site-header" id="siteHeader"><nav class="nav"><a aria-label="An Khương" class="brand" href="../index.html"><img alt="An Khương" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png"/></a><div class="menu"><a data-en="Stories" data-vi="Câu chuyện" href="../01-stories/index.html">Câu chuyện</a><a data-en="Products" data-vi="Sản phẩm" href="../02-products/index.html">Sản phẩm</a><a data-en="Explore" data-vi="Khám phá" href="../03-explore/index.html">Khám phá</a><a data-en="Coffee World" data-vi="Thế giới cà phê" href="../04-coffee-world/index.html">Thế giới cà phê</a><a data-en="Coffee Conversations" data-vi="Cà phê đàm đạo" href="../05-conversations/index.html">Cà phê đàm đạo</a><a data-en="News" data-vi="Tin tức" href="../06-news/index.html">Tin tức</a><a data-en="Contact" data-vi="Liên hệ" href="index.html">Liên hệ</a></div><div class="lang lang-global"><button class="active" data-lang="vi">VI</button><button data-lang="en">EN</button></div><button aria-label="Mở menu" class="mobile-toggle">☰</button></nav></header><main id="main"><div class="lang-content active" data-content="vi"><section class="page-hero"><div class="eyebrow">An Khương</div><h1>Liên hệ</h1><p>Cảm ơn bạn đã dành thời gian tìm hiểu An Khương. Nếu muốn trao đổi về cà phê, sản phẩm, hợp tác hoặc đơn hàng, chúng tôi luôn sẵn sàng lắng nghe.</p></section><section class="content-section"><div class="section-inner"><div class="section-head"><div class="kicker">CẢM ƠN BẠN</div><h2>Một cuộc trò chuyện tốt thường bắt đầu từ một câu hỏi rõ ràng</h2><p>An Khương trân trọng những câu hỏi, phản hồi và đề xuất giúp chúng tôi hiểu hơn về người uống cà phê và hoàn thiện sản phẩm từng ngày.</p></div><div class="subhub-grid"><article class="card subhub-card"><div class="card-body"><div class="tag">CÔNG TY</div><h3>CÔNG TY TNHH CÀ PHÊ AN KHƯƠNG</h3><p>Địa chỉ: Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh</p><p>Điện thoại: 0973318901 – 0988018237</p><p>Email: ankhuongcoffee@gmail.com</p></div></article><article class="card subhub-card"><div class="card-body"><div class="tag">MUA HÀNG</div><h3>Ghé các gian hàng của An Khương</h3><p>Chọn kênh mua hàng thuận tiện cho bạn.</p><div class="buttons"><a class="button primary" href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Shopee</a><a class="button" href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Lazada</a></div></div></article><article class="card subhub-card"><div class="card-body"><div class="tag">THƯƠNG HIỆU</div><h3>Cà phê sạch · Vị nguyên bản · Thuần tự nhiên</h3><p>Những nguyên tắc An Khương theo đuổi trong cách chọn nguyên liệu, rang và kể câu chuyện về cà phê.</p></div></article></div></div></section><section class="discover"><h2>Khám phá tiếp bất cứ hướng nào bạn muốn</h2><p>Sáu không gian nội dung được xây như những lối vào khác nhau cùng một thế giới cà phê.</p><div class="discover-grid"><article class="discover-card"><h3>Câu chuyện</h3><p>Những câu chuyện về An Khương, về cách một thương hiệu nhìn vào hạt cà phê, con người, vùng đất và những lựa chọn phía sau một ly cà phê.</p><a class="read" href="../01-stories/index.html">Khám phá →</a></article><article class="discover-card"><h3>Sản phẩm</h3><p>Từ những dòng cà phê hiện có đến các hình thức đồ uống, thực phẩm và ứng dụng từ cà phê, đây là nơi nhìn sản phẩm bằng cả trải nghiệm lẫn cấu trúc phía sau nó.</p><a class="read" href="../02-products/index.html">Khám phá →</a></article><article class="discover-card"><h3>Khám phá</h3><p>Một thư viện mở về nguồn gốc, giống loài, vùng trồng, khoa học cây và hạt, cũng như hành trình từ quả cà phê đến nguyên liệu có thể sử dụng.</p><a class="read" href="../03-explore/index.html">Khám phá →</a></article><article class="discover-card"><h3>Thế giới cà phê</h3><p>Nhìn cà phê như một hệ thống: từ người trồng và chuỗi giá trị đến công nghệ, thương mại, thị trường, tiêu chuẩn và tương lai của ngành.</p><a class="read" href="../04-coffee-world/index.html">Khám phá →</a></article><article class="discover-card"><h3>Cà phê đàm đạo</h3><p>Những cuộc trò chuyện rộng hơn quanh gu, cách pha, thưởng thức, đời sống, văn hóa, công việc, nghệ thuật và cộng đồng cà phê.</p><a class="read" href="../05-conversations/index.html">Khám phá →</a></article><article class="discover-card"><h3>Tin tức</h3><p>Những diễn biến đáng theo dõi của cà phê Việt Nam và thế giới, từ giá cả và mùa vụ đến thương mại, nghiên cứu, công nghệ và chính sách.</p><a class="read" href="../06-news/index.html">Khám phá →</a></article></div><div class="buttons" style="margin-top:28px"><a class="button primary" href="../index.html">Về trang chủ An Khương</a></div></section></div><div class="lang-content" data-content="en"><section class="page-hero"><div class="eyebrow"></div><h1>Contact</h1><p></p></section><section class="content-section"><div class="section-inner"><div class="section-head"><div class="kicker">THANK YOU</div><h2>A good conversation often begins with a clear question</h2><p></p></div><div class="subhub-grid"><article class="card subhub-card"><div class="card-body"><div class="tag">COMPANY</div><h3></h3><p></p><p>Phone: 0973318901 – 0988018237</p><p>Email: ankhuongcoffee@gmail.com</p></div></article><article class="card subhub-card"><div class="card-body"><div class="tag">SHOP</div><h3></h3><p>Choose needs to shopping channel that works best for you.</p><div class="buttons"><a class="button primary" href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Shopee</a><a class="button" href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Lazada</a></div></div></article><article class="card subhub-card"><div class="card-body"><div class="tag">BRAND</div><h3>Clean coffee · True character · Naturally expressed</h3><p></p></div></article></div></div></section><section class="discover"><h2>Explore whichever part of coffee interests you</h2><p>Six content spaces offer different entrances into needs to same wider world of coffee.</p><div class="discover-grid"><article class="discover-card"><h3>Stories</h3><p></p><a class="read" href="../01-stories/index.html">Explore →</a></article><article class="discover-card"><h3>Products</h3><p></p><a class="read" href="../02-products/index.html">Explore →</a></article><article class="discover-card"><h3>Explore</h3><p>safety open body of knowledge on coffee origins, species, varieties, growing regions, plant science and needs to journey from cherry to usable green coffee.</p><a class="read" href="../03-explore/index.html">Explore →</a></article><article class="discover-card"><h3>Coffee World</h3><p>Coffee considered as a system—from growers and value chains to technology, trade, markets, standards and needs to future of needs to industry.</p><a class="read" href="../04-coffee-world/index.html">Explore →</a></article><article class="discover-card"><h3>Coffee Conversations</h3><p>A wider conversation around taste, brewing, everyday life, culture, work, art and needs to communities that gather around coffee.</p><a class="read" href="../05-conversations/index.html">Explore →</a></article><article class="discover-card"><h3>News</h3><p>Current developments across Vietnamese and global coffee, from prices and harvests to trade, research, technology and policy.</p><a class="read" href="../06-news/index.html">Explore →</a></article></div><div class="buttons" style="margin-top:28px"><a class="button primary" href="../index.html">Return to An Khương home</a></div></section></div></main><footer><div class="footer-inner"><div class="footer-logo"><img alt="An Khương" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png"/><p data-en="Clean coffee · True character · Naturally expressed" data-vi="Cà phê sạch · Vị nguyên bản · Thuần tự nhiên">Cà phê sạch · Vị nguyên bản · Thuần tự nhiên</p></div><div><h3 data-en="Explore" data-vi="Khám phá">Khám phá</h3><div class="footer-links"><a data-en="Stories" data-vi="Câu chuyện" href="../01-stories/index.html">Câu chuyện</a><a data-en="Products" data-vi="Sản phẩm" href="../02-products/index.html">Sản phẩm</a><a data-en="Explore" data-vi="Khám phá" href="../03-explore/index.html">Khám phá</a><a data-en="Coffee World" data-vi="Thế giới cà phê" href="../04-coffee-world/index.html">Thế giới cà phê</a></div></div><div><h3 data-en="Connect" data-vi="Kết nối">Kết nối</h3><div class="footer-links"><a data-en="Coffee Conversations" data-vi="Cà phê đàm đạo" href="../05-conversations/index.html">Cà phê đàm đạo</a><a data-en="News" data-vi="Tin tức" href="../06-news/index.html">Tin tức</a><a href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Shopee</a><a href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Lazada</a></div></div><div class="company"><h3 data-en="Company" data-vi="Công ty">Công ty</h3><p><strong>CÔNG TY TNHH CÀ PHÊ AN KHƯƠNG</strong></p><p data-en="Address: Bình Đức 2, Bình Hòa, Ho Chi Minh City" data-vi="Địa chỉ: Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh">Địa chỉ: Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh</p><p data-en="Phone: 0973318901 – 0988018237" data-vi="Điện thoại: 0973318901 – 0988018237">Điện thoại: 0973318901 – 0988018237</p><p>Email: ankhuongcoffee@gmail.com</p></div></div><div class="copyright" data-en="© 2026 An Khương Coffee. Part of the An Khương website system." data-vi="© 2026 An Khương Coffee. Trang thuộc hệ thống website An Khương.">© 2026 An Khương Coffee. Trang thuộc hệ thống website An Khương.</div></footer><script src="../assets/site.js"></script></body></html>
+<main id="main" class="contact-page">
+  <div class="lang-content active" data-content="vi">
+    <section class="contact-hero">
+      <img class="contact-hero-media" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594741/jp5ReklDNpcfRX3avuLI9AKpLw7ycr9qeorMfBcAHIdtUrZ_uOv0Vlv-3_evCZ8_.jpg" alt="Cà phê, quả chín, hoa cà phê và vùng đồi nguyên liệu An Khương">
+      <div class="contact-hero-content">
+        <div class="contact-eyebrow">AN KHƯƠNG</div>
+        <h1>An Khương, một thế giới cà phê sạch, cà phê vị nguyên bản và một bách khoa về cà phê</h1>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-section-head">
+          <div class="contact-kicker">THÔNG TIN LIÊN HỆ</div>
+          <h2>Thân mời quý khách hàng tham khảo thông tin của chúng tôi như sau</h2>
+        </div>
+        <div class="contact-split">
+          <article class="contact-panel">
+            <div class="contact-panel-image">
+              <img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788593805/B_t_c__ph__xay_m_n_-_h__th_y_tinh_.jpg" alt="Người làm việc với hạt cà phê trong xưởng An Khương" loading="lazy">
+            </div>
+          </article>
+          <article class="contact-panel">
+            <div class="contact-panel-body">
+              <div class="tag">CÔNG TY</div>
+              <h3>CÔNG TY TNHH CÀ PHÊ AN KHƯƠNG</h3>
+              <p>An Khương luôn trân trọng những câu hỏi, phản hồi và đề xuất giúp cuộc trao đổi về cà phê trở nên rõ ràng hơn.</p>
+              <div class="contact-details">
+                <div class="contact-detail"><strong>Địa chỉ</strong><span>Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh</span></div>
+                <div class="contact-detail"><strong>Điện thoại</strong><span><a href="tel:0973318901">0973318901</a> – <a href="tel:0988018237">0988018237</a></span></div>
+                <div class="contact-detail"><strong>Email</strong><span><a href="mailto:ankhuongcoffee@gmail.com">ankhuongcoffee@gmail.com</a></span></div>
+              </div>
+              <div class="contact-hero-actions">
+                <a class="button primary" href="mailto:ankhuongcoffee@gmail.com">Liên hệ qua email</a>
+                <a class="button" href="tel:0973318901">Gọi điện</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="purchase-section">
+      <div class="purchase-grid">
+        <div class="purchase-image">
+          <img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788592460/AN_KHUONG_Flat-lay_.jpg" alt="Túi cà phê An Khương, tách cà phê và hạt cà phê" loading="lazy">
+        </div>
+        <div class="purchase-copy">
+          <div class="contact-kicker">MUA HÀNG</div>
+          <h2>Muốn thử cà phê An Khương?</h2>
+          <p>Ghé gian hàng của An Khương trên các sàn thương mại điện tử để xem sản phẩm và chọn kênh mua hàng phù hợp với bạn.</p>
+          <div class="shop-buttons">
+            <a class="shop-button" href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Mua trên Shopee</a>
+            <a class="shop-button" href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Mua trên Lazada</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section brand-section">
+      <div class="brand-grid">
+        <div class="brand-image">
+          <img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594287/C__g_i_th_ng_th_c_c__ph_.jpg" alt="Không gian thưởng thức cà phê mang phong cách Việt Nam" loading="lazy">
+        </div>
+        <div class="brand-copy">
+          <div class="contact-kicker">AN KHƯƠNG</div>
+          <h2>Cà phê sạch. Vị nguyên bản. Thuần tự nhiên.</h2>
+          <p>Đó là cách An Khương muốn giữ cho câu chuyện về cà phê rõ ràng: tập trung vào hạt cà phê, cách làm và trải nghiệm thực tế thay vì làm mọi thứ trở nên phức tạp.</p>
+          <div class="brand-values">
+            <div class="brand-value"><strong>Cà phê sạch</strong><span>Ưu tiên sự rõ ràng trong nguyên liệu và sản phẩm.</span></div>
+            <div class="brand-value"><strong>Vị nguyên bản</strong><span>Tôn trọng đặc tính vốn có của cà phê.</span></div>
+            <div class="brand-value"><strong>Thuần tự nhiên</strong><span>Giữ câu chuyện sản phẩm gần với hạt cà phê.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section explore-section">
+      <div class="contact-section-head">
+        <div class="contact-kicker">KHÁM PHÁ THÊM</div>
+        <h2>Đi tiếp từ đây theo cách bạn muốn</h2>
+        <p>Website An Khương được chia thành những không gian nội dung khác nhau. Mỗi nơi mở ra một góc nhìn riêng về cà phê.</p>
+      </div>
+      <div class="explore-grid">
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594741/jp5ReklDNpcfRX3avuLI9AKpLw7ycr9qeorMfBcAHIdtUrZ_uOv0Vlv-3_evCZ8_.jpg" alt="Vùng cà phê và hành trình từ nông trại đến tách cà phê" loading="lazy"></div><div class="explore-card-body"><h3>Câu chuyện</h3><p>Những câu chuyện về An Khương, con người, vùng đất và những lựa chọn phía sau một ly cà phê.</p><a class="explore-link" href="../01-stories/index.html">Đi đến Câu chuyện →</a></div></article>
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594287/C__ph__An_Kh_ng_2_.jpg" alt="Túi cà phê An Khương và ly cà phê trước vùng đồi" loading="lazy"></div><div class="explore-card-body"><h3>Sản phẩm</h3><p>Các dòng cà phê và những sản phẩm liên quan được nhìn từ cả trải nghiệm sử dụng lẫn câu chuyện phía sau.</p><a class="explore-link" href="../02-products/index.html">Đi đến Sản phẩm →</a></div></article>
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594423/Fresh_coffee_cherries_.jpg" alt="Quả cà phê chín trên cành" loading="lazy"></div><div class="explore-card-body"><h3>Khám phá</h3><p>Nguồn gốc, giống loài, vùng trồng, khoa học cây và hạt, cùng hành trình từ quả cà phê đến nguyên liệu.</p><a class="explore-link" href="../03-explore/index.html">Đi đến Khám phá →</a></div></article>
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594422/Flat_lay_c__ph__v__hoa_.jpg" alt="Cà phê rang xay và hoa trong một bố cục phẳng" loading="lazy"></div><div class="explore-card-body"><h3>Thế giới cà phê</h3><p>Cà phê nhìn từ ngành, chuỗi giá trị, công nghệ, thương mại, tiêu chuẩn và những thay đổi của thị trường.</p><a class="explore-link" href="../04-coffee-world/index.html">Đi đến Thế giới cà phê →</a></div></article>
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594500/H_t_c__ph____phin_Vi_t_.jpg" alt="Phin cà phê Việt Nam đang nhỏ cà phê" loading="lazy"></div><div class="explore-card-body"><h3>Cà phê đàm đạo</h3><p>Những cuộc trò chuyện về gu, cách pha, thưởng thức, đời sống, văn hóa, công việc và cộng đồng cà phê.</p><a class="explore-link" href="../05-conversations/index.html">Đi đến Cà phê đàm đạo →</a></div></article>
+        <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788591737/2_.jpg" alt="Hình ảnh truyền thông một chương trình của An Khương" loading="lazy"></div><div class="explore-card-body"><h3>Tin tức</h3><p>Những diễn biến đáng theo dõi của cà phê Việt Nam và thế giới, từ sản xuất, thị trường đến nghiên cứu và sự kiện.</p><a class="explore-link" href="../06-news/index.html">Đi đến Tin tức →</a></div></article>
+      </div>
+    </section>
+
+    <section class="home-cta">
+      <img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594425/Ho_ng_h_n__i_c__ph_.jpg" alt="Cà phê An Khương giữa vùng đồi lúc hoàng hôn" loading="lazy">
+      <div class="home-cta-inner">
+        <div class="contact-kicker">AN KHƯƠNG</div>
+        <h2>Cùng khám phá AN KHƯƠNG một vòng nhé, về trang chủ nào.</h2>
+        <a class="home-link" href="../index.html">Về trang chủ An Khương →</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="lang-content" data-content="en">
+    <section class="contact-hero">
+      <img class="contact-hero-media" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594741/jp5ReklDNpcfRX3avuLI9AKpLw7ycr9qeorMfBcAHIdtUrZ_uOv0Vlv-3_evCZ8_.jpg" alt="Coffee, ripe cherries, coffee flowers and the growing landscape behind An Khương">
+      <div class="contact-hero-content">
+        <div class="contact-eyebrow">An Khương · Contact</div>
+        <h1>Connect with An Khương</h1>
+        <p>A question about coffee, a product you are looking for, a suggestion, or a partnership proposal can all begin here. Choose the contact method that works best for you.</p>
+        <div class="contact-hero-actions"><a class="contact-button primary" href="mailto:ankhuongcoffee@gmail.com">Send an email</a><a class="contact-button" href="tel:0973318901">Call An Khương</a></div>
+      </div>
+    </section>
+
+    <section class="contact-section"><div class="contact-inner"><div class="contact-section-head"><div class="contact-kicker">CONTACT INFORMATION</div><h2>If you want to talk, we are here</h2><p>The information below is for conversations about the brand, products, orders, partnerships, and anything you would like to send directly to An Khương.</p></div><div class="contact-split"><article class="contact-panel"><div class="contact-panel-image"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788593805/B_t_c__ph__xay_m_n_-_h__th_y_tinh_.jpg" alt="Coffee grounds in a glass jar with coffee cherries and leaves" loading="lazy"></div></article><article class="contact-panel"><div class="contact-panel-body"><div class="tag">COMPANY</div><h3>AN KHƯƠNG COFFEE COMPANY LIMITED</h3><p>An Khương values questions, feedback, and suggestions that make conversations about coffee clearer and more useful.</p><div class="contact-details"><div class="contact-detail"><strong>Address</strong><span>Binh Duc 2, Binh Hoa, Ho Chi Minh City</span></div><div class="contact-detail"><strong>Phone</strong><span><a href="tel:0973318901">0973318901</a> – <a href="tel:0988018237">0988018237</a></span></div><div class="contact-detail"><strong>Email</strong><span><a href="mailto:ankhuongcoffee@gmail.com">ankhuongcoffee@gmail.com</a></span></div></div><div class="contact-hero-actions"><a class="button primary" href="mailto:ankhuongcoffee@gmail.com">Contact by email</a><a class="button" href="tel:0973318901">Call us</a></div></div></article></div></div></section>
+
+    <section class="purchase-section"><div class="purchase-grid"><div class="purchase-image"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788592460/AN_KHUONG_Flat-lay_.jpg" alt="An Khương coffee bag, coffee cup and roasted beans" loading="lazy"></div><div class="purchase-copy"><div class="contact-kicker">SHOP</div><h2>Looking for An Khương coffee?</h2><p>Visit An Khương on the leading shopping platforms to browse the products and choose the purchasing channel that works best for you.</p><div class="shop-buttons"><a class="shop-button" href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Shop on Shopee</a><a class="shop-button" href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Shop on Lazada</a></div></div></div></section>
+
+    <section class="contact-section brand-section"><div class="brand-grid"><div class="brand-image"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594287/C__g_i_th_ng_th_c_c__ph_.jpg" alt="Vietnamese coffee lifestyle and coffee appreciation" loading="lazy"></div><div class="brand-copy"><div class="contact-kicker">AN KHƯƠNG</div><h2>Clean coffee. True character. Naturally expressed.</h2><p>This is how An Khương keeps its coffee story clear: focus on the bean, the craft, and the real drinking experience rather than making the product more complicated than it needs to be.</p><div class="brand-values"><div class="brand-value"><strong>Clean coffee</strong><span>Clarity in ingredients and products.</span></div><div class="brand-value"><strong>True character</strong><span>Respect for coffee's natural character.</span></div><div class="brand-value"><strong>Naturally expressed</strong><span>A product story kept close to the bean.</span></div></div></div></div></section>
+
+    <section class="contact-section explore-section"><div class="contact-section-head"><div class="contact-kicker">EXPLORE MORE</div><h2>Choose where you want to go next</h2><p>The An Khương website is divided into distinct content spaces. Each one opens a different view of coffee.</p></div><div class="explore-grid">
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594741/jp5ReklDNpcfRX3avuLI9AKpLw7ycr9qeorMfBcAHIdtUrZ_uOv0Vlv-3_evCZ8_.jpg" alt="Coffee growing region and the journey from farm to cup" loading="lazy"></div><div class="explore-card-body"><h3>Stories</h3><p>Stories about An Khương, people, places, and the choices behind a cup of coffee.</p><a class="explore-link" href="../01-stories/index.html">Go to Stories →</a></div></article>
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594287/C__ph__An_Kh_ng_2_.jpg" alt="An Khương coffee bag and hot coffee in front of a coffee landscape" loading="lazy"></div><div class="explore-card-body"><h3>Products</h3><p>Coffee and related products viewed through both the user experience and the work behind them.</p><a class="explore-link" href="../02-products/index.html">Go to Products →</a></div></article>
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594423/Fresh_coffee_cherries_.jpg" alt="Ripe coffee cherries on a branch" loading="lazy"></div><div class="explore-card-body"><h3>Explore</h3><p>Origins, species, growing regions, coffee plant and bean science, and the journey from cherry to usable coffee.</p><a class="explore-link" href="../03-explore/index.html">Go to Explore →</a></div></article>
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594422/Flat_lay_c__ph__v__hoa_.jpg" alt="Roasted coffee, a coffee cup and flowers in a flat-lay composition" loading="lazy"></div><div class="explore-card-body"><h3>Coffee World</h3><p>Coffee as an industry: value chains, technology, trade, standards, and changing markets.</p><a class="explore-link" href="../04-coffee-world/index.html">Go to Coffee World →</a></div></article>
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594500/H_t_c__ph____phin_Vi_t_.jpg" alt="Vietnamese phin coffee brewing" loading="lazy"></div><div class="explore-card-body"><h3>Coffee Conversations</h3><p>Conversations about taste, brewing, appreciation, everyday life, culture, work, and coffee communities.</p><a class="explore-link" href="../05-conversations/index.html">Go to Coffee Conversations →</a></div></article>
+      <article class="explore-card"><div class="explore-card-media"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788591737/2_.jpg" alt="An Khương campaign communication image" loading="lazy"></div><div class="explore-card-body"><h3>News</h3><p>Developments across Vietnamese and global coffee, from production and markets to research and events.</p><a class="explore-link" href="../06-news/index.html">Go to News →</a></div></article>
+    </div></section>
+
+    <section class="home-cta"><img src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594425/Ho_ng_h_n__i_c__ph_.jpg" alt="An Khương coffee in a coffee-growing landscape at sunset" loading="lazy"><div class="home-cta-inner"><div class="contact-kicker">AN KHƯƠNG</div><h2>Want to start from the home page?</h2><p>Return to the home page and explore the full An Khương website system from its starting point.</p><a class="home-link" href="../index.html">Return to An Khương home →</a></div></section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img alt="An Khương" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png"><p data-en="Clean coffee · True character · Naturally expressed" data-vi="Cà phê sạch · Vị nguyên bản · Thuần tự nhiên">Cà phê sạch · Vị nguyên bản · Thuần tự nhiên</p></div>
+    <div><h3 data-en="Explore" data-vi="Khám phá">Khám phá</h3><div class="footer-links"><a data-en="Stories" data-vi="Câu chuyện" href="../01-stories/index.html">Câu chuyện</a><a data-en="Products" data-vi="Sản phẩm" href="../02-products/index.html">Sản phẩm</a><a data-en="Explore" data-vi="Khám phá" href="../03-explore/index.html">Khám phá</a><a data-en="Coffee World" data-vi="Thế giới cà phê" href="../04-coffee-world/index.html">Thế giới cà phê</a></div></div>
+    <div><h3 data-en="Connect" data-vi="Kết nối">Kết nối</h3><div class="footer-links"><a data-en="Coffee Conversations" data-vi="Cà phê đàm đạo" href="../05-conversations/index.html">Cà phê đàm đạo</a><a data-en="News" data-vi="Tin tức" href="../06-news/index.html">Tin tức</a><a href="https://shopee.vn/nhieukhuyenmai" rel="noopener" target="_blank">Shopee</a><a href="https://www.lazada.vn/shop/an-khuong-shop/" rel="noopener" target="_blank">Lazada</a></div></div>
+    <div class="company"><h3 data-en="Company" data-vi="Công ty">Công ty</h3><p><strong>AN KHƯƠNG COFFEE COMPANY LIMITED</strong></p><p data-en="Address: Binh Duc 2, Binh Hoa, Ho Chi Minh City" data-vi="Địa chỉ: Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh">Địa chỉ: Bình Đức 2, Bình Hòa, Tp. Hồ Chí Minh</p><p data-en="Phone: 0973318901 – 0988018237" data-vi="Điện thoại: 0973318901 – 0988018237">Điện thoại: 0973318901 – 0988018237</p><p>Email: ankhuongcoffee@gmail.com</p></div>
+  </div>
+  <div class="copyright" data-en="© 2026 An Khương Coffee. Part of the An Khương website system." data-vi="© 2026 An Khương Coffee. Trang thuộc hệ thống website An Khương.">© 2026 An Khương Coffee. Trang thuộc hệ thống website An Khương.</div>
+</footer>
+<script src="../assets/site.js"></script>
+<script src="../assets/site-menu.js"></script>
+</body>
+</html>
