@@ -28,6 +28,40 @@ footer{background:var(--dark);color:#d8cbc0;padding:34px 30px 18px}.footer-inner
 section:nth-of-type(3),section:nth-of-type(6),section:nth-of-type(9),section:nth-of-type(11),section:nth-of-type(16){background:var(--brown-soft)}section:nth-of-type(10),section:nth-of-type(13){background:var(--ivory)}section:nth-of-type(5){background:var(--ivory)}section:nth-of-type(7){background:var(--brown-soft)}section:nth-of-type(8),section:nth-of-type(14){background:var(--ivory)}section:nth-of-type(15){background:var(--dark);color:#fff8ef}section:nth-of-type(4){background:var(--brown)}section:nth-of-type(1){background:var(--ivory)}.section-head{max-width:1240px}.section-head h2,.section-head p{max-width:760px}.hub-story .section-head,.section.editorial-section .section-head{margin-left:auto;margin-right:auto}.hub-story .section-head h2,.hub-story .section-head p,.section.editorial-section .section-head h2,.section.editorial-section .section-head p{margin-left:0;margin-right:0}.hub-story .section-head,.section.editorial-section .section-head{padding:0 0}@media(max-width:1050px){.menu{gap:11px;font-size:9px}.product-grid{grid-template-columns:repeat(3,1fr)}.button-grid{grid-template-columns:repeat(4,1fr)}.footer-inner{grid-template-columns:1fr 1fr 1fr}.company{grid-column:1/-1}}
 @media(max-width:800px){.menu{display:none}.mobile-toggle{display:block}.nav{height:58px;padding:0 18px}.hero{grid-template-columns:1fr;padding-top:58px}.hero-copy{padding:70px 22px 45px}.hero-media{padding:0 18px 18px}.section{padding:72px 20px}.intro,.feature-layout{grid-template-columns:1fr;gap:0}.split{grid-template-columns:1fr;min-height:0}.split-media{min-height:430px}.split-copy{padding:65px 28px}.hub-grid,.bean-grid{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr 1fr}.button-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){body{font-size:16px}.hero h1{font-size:61px}.product-grid{grid-template-columns:1fr}.product-media{height:260px}.button-grid{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr}.company{grid-column:auto}.news-item{grid-template-columns:1fr;gap:7px}.news-item span:last-child{display:none}.image-band{padding:38px 0}.image-band .inner{padding:0 16px}}
+
+/* Multi-level hub navigation */
+.menu[data-nav-menu]{margin-left:auto;display:block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.menu-list,.submenu{list-style:none;margin:0;padding:0}
+.menu-list{display:flex;align-items:stretch;gap:18px}
+.menu-item{position:relative}
+.menu-item>a{display:flex;align-items:center;gap:5px;color:#eee4d8;padding:20px 0 17px;border-bottom:2px solid transparent;transition:.2s}
+.menu-item>a:hover,.menu-item>a:focus-visible,.menu-item.submenu-open>a{color:var(--accent);border-color:var(--accent)}
+.submenu{position:absolute;top:100%;left:0;min-width:260px;max-width:330px;max-height:calc(100vh - 74px);overflow:visible;padding:8px 0;background:var(--dark);border:1px solid rgba(255,255,255,.14);box-shadow:0 12px 26px rgba(0,0,0,.28);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .16s ease,transform .16s ease,visibility .16s ease;z-index:120}
+.menu-item:hover>.submenu,.menu-item:focus-within>.submenu,.menu-item.submenu-open>.submenu{opacity:1;visibility:visible;transform:none}
+.submenu>.menu-item>a{min-height:38px;padding:9px 18px;border:0;text-transform:none;letter-spacing:.02em;font-size:11px;line-height:1.35;justify-content:space-between}
+.submenu>.menu-item>a:hover,.submenu>.menu-item>a:focus-visible,.submenu>.menu-item.submenu-open>a{background:rgba(201,164,122,.12);color:var(--accent)}
+.submenu .submenu{top:-9px;left:100%;margin-left:1px}
+.submenu-toggle{display:none}
+.nav-label{display:block}
+@media (min-width:861px){
+  .menu-item.level-1:nth-last-child(2)>.submenu,.menu-item.level-1:last-child>.submenu{left:auto;right:0}
+  .menu-item.level-2:nth-last-child(-n+2)>.submenu{left:auto;right:100%;margin-left:0;margin-right:1px}
+}
+@media (max-width:860px){
+  .menu[data-nav-menu]{position:absolute;left:0;right:0;top:58px;margin:0;padding:10px 20px 18px;background:var(--dark);border-top:1px solid rgba(255,255,255,.10);max-height:calc(100vh - 58px);overflow:auto;display:none}
+  .menu[data-nav-menu].mobile-open{display:block}
+  .menu-list{display:block}
+  .menu-item{border-bottom:1px solid rgba(255,255,255,.10)}
+  .menu-item>a{padding:12px 36px 12px 2px;border:0;min-height:42px}
+  .menu-item>a:hover,.menu-item>a:focus-visible{border:0}
+  .submenu{position:static;display:none;min-width:0;max-width:none;max-height:none;overflow:visible;padding:0 0 6px 14px;border:0;box-shadow:none;opacity:1;visibility:visible;transform:none;background:transparent}
+  .menu-item.submenu-open>.submenu{display:block}
+  .submenu .submenu{position:static;margin:0;padding-left:14px}
+  .submenu>.menu-item>a{font-size:11px;padding:9px 30px 9px 2px;min-height:36px;background:transparent}
+  .submenu-toggle{display:block;position:absolute;right:0;top:5px;width:36px;height:36px;border:0;background:transparent;color:#eee4d8;font-size:20px;line-height:1;cursor:pointer}
+  .submenu-toggle span{display:inline-block;transition:transform .16s ease}
+  .menu-item.submenu-open>.submenu-toggle span{transform:rotate(90deg)}
+}
 </style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GXSM22JW78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GXSM22JW78');</script>
 <style>
@@ -206,7 +240,7 @@ footer{padding:38px var(--pad) 20px}.footer-inner{max-width:var(--content);grid-
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua nội dung</a>
-<header class="site-header" id="siteHeader"><nav class="nav"><a aria-label="An Khương" class="brand" href="./"><img alt="An Khương" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png"/></a><div class="menu"><a data-en="Stories" data-vi="Câu chuyện" href="01-stories/index.html">Câu chuyện</a><a data-en="Products" data-vi="Sản phẩm" href="02-products/index.html">Sản phẩm</a><a data-en="Explore" data-vi="Khám phá" href="03-explore/index.html">Khám phá</a><a data-en="Coffee world" data-vi="Thế giới cà phê" href="04-coffee-world/index.html">Thế giới cà phê</a><a data-en="Coffee conversations" data-vi="Cà phê đàm đạo" href="05-conversations/index.html">Cà phê đàm đạo</a><a data-en="News" data-vi="Tin tức" href="06-news/index.html">Tin tức</a><a data-en="Contact" data-vi="Liên hệ" href="07-contact/index.html">Liên hệ</a><div class="lang"><button class="active" data-lang="vi">VI</button><button data-lang="en">EN</button></div></div><button aria-label="Mở menu" class="mobile-toggle">☰</button></nav></header>
+<header class="site-header" id="siteHeader"><nav class="nav"><a aria-label="An Khương" class="brand" href="./"><img alt="An Khương" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788609185/LOGO_AK.png"/></a><div class="menu" data-nav-menu></div><div class="lang lang-global"><button class="active" data-lang="vi">VI</button><button data-lang="en">EN</button></div><button aria-label="Mở menu" class="mobile-toggle">☰</button></nav></header>
 <main id="main">
 <div class="lang-content active" data-content="vi">
 <section class="hero tone-c"><div class="hero-copy"><div class="eyebrow">An Khương cà phê</div><h1>Vị<br/>nguyên<br/>bản</h1><p class="lead">Cà phê sạch, thuần tự nhiên, được chọn lọc và rang với sự chăm chút để giữ lại điều đáng quý nhất: hương vị thật của hạt cà phê.</p><div class="hero-actions"><a class="button primary" href="#products">Khám phá cà phê An Khương</a><a class="button" href="#story">Câu chuyện An Khương</a></div></div><div class="hero-media"><figure><img alt="Túi cà phê An Khương giữa hoa cà phê và khung cảnh cao nguyên" loading="eager" src="https://res.cloudinary.com/wnlmpwor/image/upload/v1788594741/i_hoa_c__ph_.jpg"/><figcaption class="caption">Cà phê An Khương giữa hoa cà phê và không gian cao nguyên.</figcaption></figure></div></section>
@@ -279,4 +313,5 @@ const header=document.getElementById('siteHeader');let last=window.scrollY;windo
 const toggle=document.querySelector('.mobile-toggle');toggle.addEventListener('click',()=>{const m=document.querySelector('.menu');m.classList.toggle('mobile-open')});
 })();
 </script>
+<script src="assets/site-menu.js"></script>
 </body></html>
